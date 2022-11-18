@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
@@ -94,7 +95,7 @@
                 asperiores aliquam similique, facere alias tempore, iure ullam
                 repudiandae unde! Consequuntur ducimus magni a architecto!
               </p>
-              <a href="#" class="btn btn-outline">
+              <a href="#about" class="btn btn-outline">
                 <i class="fas fa-chevron-down"></i> Read More
               </a>
             </div>
@@ -245,9 +246,14 @@
     </footer>
 
     <script>
+      const navbar = document.getElementById("navbar");
       window.onscroll = () => {
-          const
-      }
+        if (window.pageYOffset > 200) {
+          navbar.classList.remove("top");
+        } else {
+          navbar.classList.add("top");
+        }
+      };
     </script>
   </body>
 </html>
