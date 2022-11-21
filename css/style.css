@@ -186,3 +186,67 @@ img {
 .footer a:hover {
   color: #28a745;
 }
+/* Mobile */
+@media (max-width: 768px) {
+  .hero .navbar nav {
+    display: none;
+  }
+
+  .hero .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero .content h1 {
+    font-size: 3rem;
+  }
+
+  .hero .content p {
+    font-weight: 100;
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .flex-columns .column .column-2 {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-columns .column .column-2 h4 {
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+
+  .flex-columns .column .column-2 h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+
+  .section-header h4 {
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+
+  .section-header h2 {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+}
